@@ -1,0 +1,267 @@
+/* Estilos generales */
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3 {
+    font-weight: bold;
+}
+
+.intro {
+    .intro {
+        font-family: "Poppins", sans-serif;
+    }
+    
+}
+
+p {
+    margin-bottom: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+a:hover {
+    color: #666;
+}
+
+/* Estilos del header */
+header {
+    background-color: #1abc9c; /* Azul turquesa */
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav {
+    display: flex;
+}
+
+header nav a {
+    margin-right: 10px;
+    color: #fff; /* Añadido: para que los enlaces sean visibles */
+}
+
+/* Estilos del main */
+main {
+    padding: 20px;
+}
+
+.intro {
+    padding: 20px;
+}
+
+.grid-2 {
+    width:50%;
+    display: flex;
+}
+
+.imagen-columna,
+.texto-columna {
+    width: auto;
+}
+
+.imagen-columna img {
+    width: 200px;
+    height: auto;
+    border-radius: 5px;
+}
+
+.texto-columna {
+    padding: 0 20px;
+}
+
+
+
+/* Estilos de la sección de acortar URL */
+.acortar {
+    background-color: #f5f5f5;
+    padding: 20px;
+}
+
+.acortar input {
+    width: 80%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    border-radius: 5px; /* Añadido: para hacer los textbox redondeados */
+}
+
+.acortar button {
+    margin-left: 10px;
+    padding: 10px 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px; /* Añadido: para hacer el botón redondeado */
+    background: linear-gradient(to right, #1abc9c, #2ecc71); /* Gradiente azul a verde turquesa */
+    cursor: pointer;
+}
+
+/* Estilos para el grid horizontal */
+/* Estilos para el grid horizontal */
+.grid-3 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font-family: "Roboto",sans-serif;
+}
+
+.plan {
+    width: 30%;
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+.plan h3 {
+    margin-top: 0;
+}
+
+.plan ul {
+    padding: 0;
+    list-style-type: none;
+}
+
+.plan ul li {
+    margin-bottom: 10px;
+}
+
+.plan button {
+    padding: 10px 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background: linear-gradient(to right, #1abc9c, #2ecc71); /* Gradiente azul a verde turquesa */
+    cursor: pointer;
+}
+
+/* Estilos del footer */
+footer {
+    background-color: #1abc9c; /* Azul turquesa */
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+footer nav ul {
+    padding: 0;
+    list-style: none;
+}
+
+footer nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.redes-sociales a {
+    color: #fff
+}
+/* Estilos para la sección de contacto */
+.contacto {
+    background-color: #f5f5f5;
+    padding: 20px;
+}
+
+.contacto h2 {
+    margin-bottom: 20px;
+}
+
+.contacto form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contacto .input-container {
+    margin-bottom: 20px;
+}
+
+.contacto label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.contacto input[type="text"],
+.contacto input[type="email"],
+.contacto textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contacto textarea {
+    height: 150px;
+}
+
+.resultado img{
+    margin-left: 10px;
+width: 40px;
+height: auto;
+transform: rotate(-90deg);
+}
+.resultado video{
+width: 70px;
+height:auto;
+}
+
+.contacto button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background: linear-gradient(to right, #1abc9c, #2ecc71);
+    color: #fff;
+    cursor: pointer;
+}
+
+.contacto button:hover {
+    background: #16a085;
+}
+
+
+/* Estilos responsivos */
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header nav {
+        margin-top: 10px;
+    }
+
+    .acortar input {
+        width: 100%;
+    }
+
+    .plan {
+        width: 100%;
+    }
+}
+/*para las columnas*/
+@media screen and (max-width: 768px) {
+    .grid-2 {
+        flex-direction: column;
+    }
+
+    .imagen-columna,
+    .texto-columna {
+        width: 100%;
+    }
+
+    .texto-columna {
+        padding: 20px 0;
+    }
+}

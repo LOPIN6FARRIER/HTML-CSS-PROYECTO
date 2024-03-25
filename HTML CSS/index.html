@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acortador de URL</title>
+    <link rel="stylesheet" href="/Css/style.css">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- Fuentes de Google -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>SHORTRL</h1>
+        <nav>
+            <a href="#">Herramientas</a>
+            <a href="#">Precios</a>
+            <a href="#">Contáctanos</a>
+        </nav>
+    </header>
+    <main>
+        <section class="intro">
+            <div class="grid-2">
+                <div class="imagen-columna">
+                    <img src="/media/Porque-acortar-url.webp" alt="Acortar URL">
+                </div>
+                <div class="texto-columna">
+                    <p>Acortar URLs puede hacer que tus enlaces sean más limpios y fáciles de compartir. Además, proporciona seguimiento de clics para comprender mejor el rendimiento de tus enlaces. ¡Prueba ahora nuestro servicio para experimentar la comodidad y la eficacia!</p>
+                </div>
+            </div>
+        </section>
+        
+        <section class="acortar">
+            <h2>Acorta tu URL</h2>
+            <form action="#">
+                <div class="input-container">
+                    <input type="text" placeholder="Ingresa tu URL aquí">
+                    <button type="submit" class="acortar-btn">Acorta tu URL</button>
+                </div>
+            </form>
+            <div class="resultado">
+                <p>URL original:</p>
+                <span class="url-original">https://www.ejemplo.com/una-url-muy-larga</span>
+                <p>URL acortada:</p>
+                <span class="url-acortada">https://acor.ta/123456</span>
+                <button type="button" class="copiar-btn">Copiar</button>
+                <video autoplay muted loop>
+                    <source src="/media/click.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            
+        </section>
+        
+        <section class="planes">
+            <h2>Planes disponibles</h2>
+            <div class="grid-3">
+                <div class="plan">
+                    <h3>Free</h3>
+                    <ul>
+                        <li>100 URLs acortadas</li>
+                        <li>Sin anuncios</li>
+                        <li>Estadísticas básicas</li>
+                    </ul>
+                    <button>Elegir plan</button>
+                </div>
+                <div class="plan">
+                    <h3>Personal</h3>
+                    <ul>
+                        <li>1000 URLs acortadas</li>
+                        <li>Sin anuncios</li>
+                        <li>Estadísticas avanzadas</li>
+                        <li>Dominio personalizado</li>
+                    </ul>
+                    <button>Elegir plan</button>
+                </div>
+                <div class="plan">
+                    <h3>Empresarial</h3>
+                    <ul>
+                        <li>URLs ilimitadas</li>
+                        <li>Sin anuncios</li>
+                        <li>Estadísticas detalladas</li>
+                        <li>Dominio personalizado</li>
+                        <li>Atención al cliente prioritaria</li>
+                    </ul>
+                    <button>Elegir plan</button>
+                </div>
+            </div>
+            <div class="grid-2">
+                <div class="imagen-columna">
+                    <img src="/media/elige.webp" alt="Planes">
+                </div>
+                <div class="texto-columna">
+                    <p>Elegir el plan adecuado es esencial para satisfacer tus necesidades. Nuestros planes ofrecen una variedad de funciones que se adaptan a usuarios individuales y empresas. ¡Descubre el plan perfecto para ti y comienza a disfrutar de todas las ventajas que ofrecemos!</p>
+                </div>
+            </div>
+        </section>
+        <section class="contacto">
+            <h2>Contacto</h2>
+            <form action="#" method="POST">
+                <div class="input-container">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Ingresa tu nombre" required>
+                </div>
+                <div class="input-container">
+                    <label for="email">Correo electrónico:</label>
+                    <input type="email" id="email" name="email" placeholder="Ingresa tu correo electrónico" required>
+                </div>
+                <div class="input-container">
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" placeholder="Ingresa tu mensaje" required></textarea>
+                </div>
+                <button type="submit" class="enviar-btn">Enviar mensaje</button>
+            </form>
+        </section>
+        
+    </main>
+    <footer>
+        <nav>
+            <ul>
+                <li><a href="#">Política de privacidad</a></li>
+                <li><a href="#">Términos de servicio</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+        <div class="redes-sociales">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+        <p>Copyright &copy; 2023 - Acortador de URL</p>
+    </footer>
+</body>
+</html>
